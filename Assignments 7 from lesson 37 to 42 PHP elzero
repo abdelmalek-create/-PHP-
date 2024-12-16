@@ -1,0 +1,18 @@
+<?php
+$n = 0;
+$m = 0;
+$mix = [1, 2, "A", "B", "C", 3, 4];
+for ($i = 0; $i < count($mix); $i++){
+  if (is_numeric($mix[$i])){
+    echo $mix[$i];
+    echo "<br>";
+    $n = $n + 1;
+  }else {
+    $m = $m + 1;
+  }
+}
+echo $n . " Numbers Printed";
+echo "<br>";
+echo $m . "  Letters Ignored";
+echo "<br>";
+?>
